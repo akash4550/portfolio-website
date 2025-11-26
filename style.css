@@ -80,8 +80,10 @@ section {
 }
 
 .home-img img {
-    width: 35vw;
+    width: 30vw;
+    border-radius: 25px;
     animation: floatImage 4s ease-in-out infinite;
+    
 }
 
 @keyframes floatImage {
@@ -203,7 +205,7 @@ span {
 
 .about-img img {
     width: 35vw;
-      
+      border-radius: 25px;
     animation: floatImage 4s ease-in-out infinite;
    
 }

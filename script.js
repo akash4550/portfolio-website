@@ -1,4 +1,4 @@
-// Navbar toggle
+
 const menuIcon = document.querySelector('#menu-icon');
 const navbar = document.querySelector('.navbar');
 
@@ -7,7 +7,7 @@ menuIcon.onclick = () => {
     navbar.classList.toggle('active');
 };
 
-// Scroll active link highlight + sticky header
+
 const sections = document.querySelectorAll('section');
 const navLinks = document.querySelectorAll('header nav a');
 
@@ -27,17 +27,17 @@ window.onscroll = () => {
         }
     });
 
-    // Sticky navbar
+   
     const header = document.querySelector('header');
     header.classList.toggle('sticky', window.scrollY > 100);
 };
 
-// Scroll Reveal Animations
+
 ScrollReveal({
     distance: '80px',
     duration: 2000,
     delay: 200
-    // reset: true, // enable if you want repeat animations
+    
 });
 
 ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
@@ -45,12 +45,12 @@ ScrollReveal().reveal('.home-img, .project-container, .achievements-container, .
 ScrollReveal().reveal('.home-content h1, .about-img, .heading', { origin: 'left' });
 ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 
-// Typed.js Animation
+
 const typed = new Typed('.multiple-text', {
     strings: [
         'Frontend Web Developer',
         'React Enthusiast',
-        'Full-Stack Developer',
+        'Mern-Stack Developer',
         'C++ Programmer',
         'Problem Solver'
     ],
@@ -64,7 +64,7 @@ const typed = new Typed('.multiple-text', {
     cursorChar: '|'
 });
 
-// Read More Toggle
+
 function toggleReadMore() {
     const moreText = document.getElementById('moreText');
     const btn = document.querySelector('.read-more-btn');
