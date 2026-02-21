@@ -48,11 +48,14 @@ ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 
 const typed = new Typed('.multiple-text', {
     strings: [
-        'Frontend Web Developer',
-        'React Enthusiast',
-        'Mern-Stack Developer',
-        'C++ Programmer',
-        'Problem Solver'
+       'MERN Stack Developer',      // Core Identity
+    'AI-Augmented Engineer',     // Modern Productivity
+    'Full-Stack Architect',      // Leadership/Vision
+    'Real-Time Systems Expert',  // Specialized Tech (Blink)
+    'SaaS Solutions Developer',  // Specialized Industry (Prescripto)
+    'Next.js 14 Developer',      // Framework Mastery
+    'C++ Programmer',            // Foundational Skill
+    'Problem Solver'             // The "Logic" Engine
     ],
     typeSpeed: 60,
     backSpeed: 30,
