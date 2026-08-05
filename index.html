@@ -1684,6 +1684,288 @@
       }
     }
 </style>
+
+<style id="final-typography-balance">
+  /* FINAL TYPOGRAPHY BALANCE — intentionally strict to override older rules */
+
+  :root {
+    --balanced-caption: 0.72rem;
+    --balanced-small: 0.84rem;
+    --balanced-body: 0.96rem;
+    --balanced-lead: 1.04rem;
+    --balanced-card-title: 1.12rem;
+    --balanced-project-title: 1.48rem;
+    --balanced-section-title: clamp(1.9rem, 2.5vw, 2.55rem);
+    --balanced-hero-title: clamp(2.9rem, 4.35vw, 4.25rem);
+  }
+
+  body {
+    font-size: 16px !important;
+    line-height: 1.62 !important;
+  }
+
+  /* Hero */
+  .hero h1 {
+    max-width: 760px !important;
+    font-size: var(--balanced-hero-title) !important;
+    line-height: 1.04 !important;
+    letter-spacing: -0.048em !important;
+  }
+
+  .hero h1 span {
+    margin-top: 6px !important;
+  }
+
+  .hero-description,
+  .hero-lead {
+    max-width: 700px !important;
+    margin-top: 20px !important;
+    font-size: var(--balanced-lead) !important;
+    line-height: 1.65 !important;
+  }
+
+  .role-line {
+    min-height: 0 !important;
+    margin: 17px 0 13px !important;
+    font-size: 1.15rem !important;
+    line-height: 1.35 !important;
+  }
+
+  .hero-grid {
+    gap: 44px !important;
+  }
+
+  .hero-actions {
+    margin-top: 24px !important;
+  }
+
+  .hero-links,
+  .social-row {
+    margin-top: 20px !important;
+  }
+
+  /* Section headers: compact, single-column, no giant horizontal gap */
+  .section-head,
+  .section-header {
+    display: block !important;
+    margin-bottom: 28px !important;
+    padding-bottom: 24px !important;
+    border-bottom: 1px solid var(--line) !important;
+  }
+
+  .section-heading {
+    max-width: 760px !important;
+    margin-bottom: 28px !important;
+  }
+
+  .section-head > div,
+  .section-header > div {
+    max-width: 760px !important;
+  }
+
+  .section-head h2,
+  .section-header h2,
+  .section-heading h2,
+  .contact-card h2,
+  .contact-grid h2 {
+    max-width: 760px !important;
+    margin-top: 11px !important;
+    margin-bottom: 0 !important;
+    font-size: var(--balanced-section-title) !important;
+    line-height: 1.16 !important;
+    letter-spacing: -0.035em !important;
+  }
+
+  .section-head p,
+  .section-header p,
+  .section-heading p {
+    max-width: 720px !important;
+    margin-top: 12px !important;
+    justify-self: auto !important;
+    font-size: var(--balanced-body) !important;
+    line-height: 1.62 !important;
+  }
+
+  .section-label,
+  .eyebrow,
+  .hero-kicker {
+    font-size: var(--balanced-caption) !important;
+    letter-spacing: 0.12em !important;
+  }
+
+  /* Project and card titles */
+  .work-copy h3,
+  .project-body h3 {
+    font-size: var(--balanced-project-title) !important;
+    line-height: 1.2 !important;
+    letter-spacing: -0.025em !important;
+  }
+
+  .engineering-card h3,
+  .timeline-card h3,
+  .timeline-meta h3,
+  .secondary-card h3,
+  .other-card h3,
+  .skill-card h3,
+  .stack-group h3,
+  .research-card h3,
+  .research-panel h3 {
+    font-size: var(--balanced-card-title) !important;
+    line-height: 1.28 !important;
+    letter-spacing: -0.015em !important;
+  }
+
+  /* Body copy */
+  .work-copy > p,
+  .project-body > p,
+  .work-outcomes li,
+  .project-highlights li,
+  .engineering-card p,
+  .timeline-card ul,
+  .timeline-item ul,
+  .secondary-card p,
+  .other-card p,
+  .research-card p,
+  .research-panel > p,
+  .section-head p,
+  .section-header p,
+  .contact-card p,
+  .contact-grid p {
+    font-size: var(--balanced-small) !important;
+    line-height: 1.58 !important;
+  }
+
+  /* Metrics and labels */
+  .metric strong,
+  .proof-item strong,
+  .research-metric strong,
+  .research-stat strong {
+    font-size: 1.35rem !important;
+    line-height: 1.2 !important;
+  }
+
+  .metric span,
+  .proof-item span,
+  .research-metric span,
+  .research-stat span,
+  .system-title,
+  .system-status,
+  .system-caption,
+  .work-index,
+  .pill,
+  .tag,
+  .project-type {
+    font-size: var(--balanced-caption) !important;
+  }
+
+  /* Compact spacing across blocks */
+  .page-section {
+    padding: 14px 0 !important;
+  }
+
+  .hero.page-section,
+  .hero-section {
+    padding-top: 96px !important;
+  }
+
+  .section-shell,
+  .page-block-inner {
+    padding: clamp(26px, 4vw, 46px) !important;
+  }
+
+  .metrics,
+  .proof-grid,
+  .proof-bar {
+    margin-top: 26px !important;
+  }
+
+  .work-card {
+    gap: 18px !important;
+    padding: 20px !important;
+  }
+
+  .work-index {
+    margin-bottom: 13px !important;
+  }
+
+  .work-outcomes,
+  .project-highlights {
+    margin-top: 14px !important;
+  }
+
+  .work-stack,
+  .tags {
+    margin-top: 15px !important;
+  }
+
+  .work-links,
+  .project-links {
+    margin-top: 16px !important;
+  }
+
+  .engineering-number {
+    margin-bottom: 20px !important;
+  }
+
+  .engineering-card {
+    min-height: 190px !important;
+  }
+
+  .system-view {
+    min-height: 286px !important;
+  }
+
+  /* Keep each section visually self-contained */
+  .section-shell,
+  .page-block {
+    border-radius: 22px !important;
+  }
+
+  @media (max-width: 1020px) {
+    .section-head,
+    .section-header {
+      display: block !important;
+    }
+
+    .hero-grid {
+      gap: 34px !important;
+    }
+  }
+
+  @media (max-width: 720px) {
+    .hero h1 {
+      font-size: clamp(2.55rem, 11.5vw, 3.45rem) !important;
+      line-height: 1.06 !important;
+    }
+
+    .section-head h2,
+    .section-header h2,
+    .section-heading h2,
+    .contact-card h2,
+    .contact-grid h2 {
+      font-size: clamp(1.7rem, 7.5vw, 2.15rem) !important;
+    }
+
+    .section-shell,
+    .page-block-inner {
+      padding: 22px !important;
+    }
+
+    .page-section {
+      padding: 9px 0 !important;
+    }
+
+    .hero.page-section,
+    .hero-section {
+      padding-top: 88px !important;
+    }
+
+    .system-view {
+      min-height: auto !important;
+    }
+  }
+</style>
+
 </head>
 <body>
 <a class="skip-link" href="#main-content">Skip to content</a>
